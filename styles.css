@@ -1,38 +1,86 @@
-/* CSS for Navbar and Header */
-nav {
-    position: fixed;
-    /* Add your styles here */
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
 header {
-    /* Add your styles here */
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    position: fixed;
+    width: 100%;
+    top: 0;
 }
 
-/* CSS for Courses Offered */
-section.courses {
+nav ul {
+    list-style-type: none;
+    padding: 0;
     display: flex;
-    /* Add your styles here */
 }
 
-/* CSS for Hiring Partners & Mentors */
-section.partners {
-    display: grid;
-    /* Add your styles here */
+nav ul li {
+    margin-right: 20px;
 }
 
-/* CSS for Student Success Stories */
-section.testimonials {
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+section {
+    padding: 20px;
+}
+
+/* Course Section Styles */
+#courses {
     display: flex;
-    /* Add your styles here */
+    flex-wrap: wrap;
 }
 
-/* CSS for Accreditation & Learning Platform */
-section.accreditation {
-    display: flex;
-    /* Add your styles here */
+.course {
+    flex: 1 1 300px;
+    background-color: #f4f4f4;
+    margin: 10px;
+    padding: 20px;
 }
 
-/* CSS for Responsiveness */
+/* Partners & Mentors Section Styles */
+#partners-mentors figure {
+    margin: 10px;
+}
+
+#partners-mentors img {
+    width: 100%;
+    height: auto;
+}
+
+/* Success Stories Section Styles */
+#success-stories article {
+    background-color: #f9f9f9;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+/* Accreditation & Learning Platform Section Styles */
+#accreditation div {
+    margin-bottom: 20px;
+}
+
+/* Registration Form Styles */
+#registration {
+    background-image: url('blur-background.jpg');
+    color: white;
+    padding: 20px;
+}
+
+/* Media Queries */
 @media screen and (max-width: 600px) {
-    /* Add your styles here */
+    header {
+        padding: 10px;
+    }
+    .course {
+        flex: 1 1 100%;
+    }
 }
